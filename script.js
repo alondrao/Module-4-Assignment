@@ -1,3 +1,4 @@
+// 
 
 var startButton = document.getElementById("startButton");
 var homeContainer =  document.getElementById("homeContainer");
@@ -17,13 +18,13 @@ function startQuiz() {
 }
 
 let count= 0
-
+// function to display the timer
 function displayHello() {
   const timer= document.getElementById("demo")
   timer.innerHTML= count;
   count= count+1
 }
-
+// questions for the quiz
 var questionsArray = [
   {
       question: "Question: What is the HTML tag under which you can write the JavaScript code?",
@@ -54,4 +55,12 @@ var questionsArray = [
       answerChoice: ["A) Return a value", "B) Accept parameters", "C) Accept parameters and Return a value", "D) All of the above"],
       correctAnswer: 1
   }];
-  
+  // function to display the questions
+  function displayQuestions() {
+    questionHeading.textContent = questionsArray[0].question;
+    answerChoiceA.textContent = questionsArray[0].answerChoice[0];
+    answerChoiceB.textContent = questionsArray[0].answerChoice[1];
+    answerChoiceC.textContent = questionsArray[0].answerChoice[2];
+    answerChoiceD.textContent = questionsArray[0].answerChoice[3];
+  }
+ 
