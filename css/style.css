@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: 1px solid red;
+}
+
+body {
+    background-color:#222222
+    font-family monospace;
+}
+p {
+    color: rgb(4, 1, 1);
+    font-size: 1.3em;
+}
+
+.outer-container {
+    padding: 10px
+}   
+
+.top-bar button {
+    background-color: #222222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+} 
+.top-bar button:hover {
+    background-color: #333333;
+}
+
