@@ -16,7 +16,53 @@ let score = 0;
 let time = 60;
 let timerInterval;
 
-var questions = [];
+var questions = [
+    {
+        question: 'How do you write a comment in JavaScript?',
+        answers: [
+            { text: '<!--This is a comment-->', correct: false },
+            { text: '//This is a comment', correct: true },
+            { text: '/*This is a comment*/', correct: false },
+            { text: '#This is a comment', correct: false }
+        ]
+    },
+    {
+        question: 'Which symbol is used to assign a value to a variable?',
+        answers: [
+            { text: '=', correct: true },
+            { text: ':', correct: false },
+            { text: '-', correct: false },
+            { text: '+', correct: false }
+        ]
+    },
+    {
+        question: 'Which of the following is not a data type in JavaScript?',
+        answers: [
+            { text: 'Boolean', correct: false },
+            { text: 'String', correct: false },
+            { text: 'Integer', correct: true },
+            { text: 'Object', correct: false }
+        ]
+    },
+    {
+        question: 'Which of the following is not a loop in JavaScript?',
+        answers: [
+            { text: 'for', correct: false },
+            { text: 'while', correct: false },
+            { text: 'repeat', correct: true },
+            { text: 'do-while', correct: false }
+        ]
+    },
+    {
+        question: 'Which of the following is not a comparison operator in JavaScript?',
+        answers: [
+            { text: '==', correct: false },
+            { text: '===', correct: false },
+            { text: '!=', correct: false },
+            { text: '<>', correct: true }
+        ]
+    }
+];
 
 startButton.addEventListener('click', startGame);
 quizButton.addEventListener('click', () => {
@@ -134,6 +180,7 @@ function showHighScores() {
         .map(score => `<li>${score.initials} - ${score.score}</li>`)
         .join('');
 }
+
 
 
 
