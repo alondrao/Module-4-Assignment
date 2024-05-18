@@ -102,7 +102,7 @@ function setNextQuestion() {
 function showQuestion(question) {
     questionElement.innerText = question.question;
     question.answers.forEach(answer => {
-        const button = document.createElement('button');
+        var button = document.createElement('button');
         button.innerText = answer.text;
         button.classList.add('btn');
         if (answer.correct) {
@@ -121,8 +121,8 @@ function resetState() {
 }
 
 function selectAnswer(e) {
-    const selectedButton = e.target;
-    const correct = selectedButton.dataset.correct;
+    var selectedButton = e.target;
+    var correct = selectedButton.dataset.correct;
     if (correct) {
         score += 10;
         scoreElement.innerText = score;
@@ -162,8 +162,8 @@ function clearStatusClass(element) {
 }
 
 submitButton.addEventListener('click', () => {
-    const initials = initialsElement.value;
-    const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+    var initials = initialsElement.value;
+    var highScores = JSON.parse(localStorage.getItem('highScores')) || [];
     highScores.push({ initials, score });
     highScores.sort((a, b) => b.score - a.score);
     highScores.splice(5);
@@ -175,7 +175,7 @@ submitButton.addEventListener('click', () => {
 
 function showHighScores() {
     highScoresElement.classList.remove('hide');
-    const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+    var highScores = JSON.parse(localStorage.getItem('highScores')) || [];
     highScoresList.innerHTML = highScores
         .map(score => `<li>${score.initials} - ${score.score}</li>`)
         .join('');
