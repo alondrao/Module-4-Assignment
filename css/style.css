@@ -18,3 +18,19 @@ body {
   display: flex;
   flex-direction: column;
 }
+.btn {
+  background-color: #7d47a5;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 12px
+}
+.btn:hover {
+  background-color: #5f2d6b;
+}
+#high-scores {
+  margin-top: 20px;
+  text-align: center;
+}
