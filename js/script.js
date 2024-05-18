@@ -1,22 +1,22 @@
-const startButton = document.getElementById('start');
-const quizButton = document.getElementById('quiz');
-const submitButton = document.getElementById('submit');
-const clearScoresButton = document.getElementById('clear-scores-btn');
-const questionElement = document.getElementById('question');
-const answersElement = document.getElementById('answer');
-const initialsElement = document.getElementById('initials');
-const scoreElement = document.getElementById('score');
-const endElement = document.getElementById('end');
-const highScoresElement = document.getElementById('high-scores');
-const highScoresList = document.getElementById('high-scores-list');
-const timeElement = document.getElementById('time');
+var startButton = document.getElementById('start');
+var quizButton = document.getElementById('quiz');
+var submitButton = document.getElementById('submit');
+var clearScoresButton = document.getElementById('clear-scores-btn');
+var questionElement = document.getElementById('question');
+var answersElement = document.getElementById('answer');
+var initialsElement = document.getElementById('initials');
+var scoreElement = document.getElementById('score');
+var endElement = document.getElementById('end');
+var highScoresElement = document.getElementById('high-scores');
+var highScoresList = document.getElementById('high-scores-list');
+var timeElement = document.getElementById('time');
 
 let shuffledQuestions, currentQuestionIndex;
 let score = 0;
 let time = 60;
 let timerInterval;
 
-const questions = [];
+var questions = [];
 
 startButton.addEventListener('click', startGame);
 quizButton.addEventListener('click', () => {
