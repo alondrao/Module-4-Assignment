@@ -1,5 +1,5 @@
 # Module-4-Assignment
-For this challenge, I used html, css and javascript to create a quiz. The html file built the structure of the quiz as well adding buttons. Css is used to style the quiz and the presentation overall. Javascript contains everythinng needed to have the quiz working.
+For this challenge, I used html, css and javascript to create a quiz. The html file built the structure of the quiz as well adding buttons. Css is used to style the quiz and the presentation overall. Javascript contains everything needed to have the quiz working.
 # User Story
 AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
