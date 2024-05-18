@@ -72,7 +72,7 @@ quizButton.addEventListener('click', () => {
 
 clearScoresButton.addEventListener('click', () => {
     localStorage.clear();
-    highScoresList.innerHTML = '';
+    highScoresList.innerHTML = '<li>No high scores to display</li>'; 
 });
 
 function startGame() {
