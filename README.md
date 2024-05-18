@@ -1,5 +1,5 @@
 # Module-4-Assignment
-In this challenge, a quiz is created using API's. This application used alot of javascript building. Alongside HTML the code quiz was created.
+
 # User Story
 AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
